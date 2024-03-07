@@ -18,6 +18,7 @@
 .navs li{
     font-size: larger !important;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .nav-link{
     color: white !important;
@@ -32,9 +33,11 @@
 .navbar-toggler{
     border: 1px solid white !important;
 }
-navbar-toggler-icon{
+/* navbar-toggler-icon{
     color: #fff !important;
-}
+} */
+
+
 /* hero start */
 .headerdiv{
     position: absolute;
@@ -48,6 +51,12 @@ navbar-toggler-icon{
 }
 .yellow{
     color: #FFBA00;
+}
+
+.chatbot{
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 /* hero end */
 
@@ -144,7 +153,7 @@ navbar-toggler-icon{
 .sliding{
     padding: 0 50px;
     text-align: center;
-    background-color: #2B013E;
+    background-color: #1f022c;
     height: fit-content;
 }
 .sliding h1{
@@ -159,10 +168,10 @@ navbar-toggler-icon{
     transform: scale(1.1);
     opacity: 1;
     /* padding: 1rem; */
-    /* background: #e43a15;
-    background: -webkit-linear-gradient(to right, #e65245, #e43a15);
-    background: linear-gradient(to right, #e65245, #e43a15); */
-    /* color: #fff; */
+    background: #FFBA00;
+    background: -webkit-linear-gradient(to right, #e6c045, #FFBA00);
+    background: linear-gradient(to right, #e4c661, #FFBA00); 
+    color: #fff;
 }
 .owl-carousel{
     display: flex;
@@ -227,10 +236,13 @@ background: #ffffff;
     color: #FFBA00;
     padding: 0 0 1rem 0;
 }
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
 .logo{
     display: flex;
-    margin: 1rem 1rem;
-    width: 260px !important;
+    width: 260px;
     justify-content: center;
     align-items: center;
     /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.579);
@@ -239,14 +251,12 @@ background: #ffffff;
 .logo :hover{
     transform: scale(.8);
 }
-.rlogo{
-    margin-right: 0;
- }
+
 /* tech end */
 
 /* footer */
 footer{
-    background-color: #2B013E;
+    background-color: #1f022c;
     color: white;
 }
 footer svg{
@@ -258,11 +268,102 @@ footer svg{
 }
 /* footer */
 
-@media screen and (max-width: 1050px) {
-    .project .row .image {
+/* media query */
+@media screen and (max-width: 1338px) {
+    .logo{
+        width: 200px !important;
+    }
+}
+@media screen and (max-width: 1099px) {
+    .logo{
+        width: auto !important;
+    }    
+    .project img {
+        width: 400px;
+        height:  300px;
+    }
+    .pnumber{
+        font-size: 30px;
+    }
+    .ptitle{
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 1043px) {
+    .logo{
+        width: auto !important;
+    }
+    .row2{
+        flex-direction: column;
+    }
+    footer img{
+        width: 100px;
+    }
+    .ptitle{
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 900px) {
+    .project img {
       display: none;
     }
-  }
+    .project image{
+        width: 0%;
+    }
+    .project .col-text{
+        width: 100%;
+    }
+    .service .card{
+        width: 20rem;
+    }
+    .service .card btn{
+        width: 50px !important;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .box{ 
+        padding: 4px;
+        width: 50vw;
+    }
+    .pnumber{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .navbar-brand img{
+        height: 30px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    footer svg{
+        width: 16px;
+    }
+    .card{
+        width: 15rem !important;
+    }
+    .card img{
+        width: 15rem;
+    }
+    .tech{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 300px) {
+    .card{
+        width: 12rem !important;
+    }
+    .card img{
+        width: 12rem;
+    }
+    .tech{
+        padding: 0;
+    }
+}
+
+
+
 
 
 
