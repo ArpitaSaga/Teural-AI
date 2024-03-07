@@ -58,7 +58,7 @@ $(document).ready(function() {
                 items:1,
                 // nav:true
             },
-            600:{
+            800:{
                 items:3,
                 // nav:false
             },
