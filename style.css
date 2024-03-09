@@ -100,25 +100,85 @@
     color: #FFBA00;
 }
 .card{
+    border: none !important;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+}
+/* .card{
     margin: 20px 20px;
-    transition: all 0.6s ease
+    border: none !important;
+    transition: all 1s ease;
 }
-.card:hover{
-    transform: scale(1.1);
-    transition: all 0.6s ease;
+.card img{
+    border-radius: 30px ;
 }
-.card-body{
+.card .title{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    border-radius: 30px;
+    background-color: #FFBA00;
+    text-align: center;
+    color: #fff;
+}
+.card .title h5{
+    padding: .5rem 0;
+}
+.card .details{
+    padding: 2rem;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 500;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.card .details a{
+    text-decoration: none;
+    color: white;
+}
+
+.service .row1 .card:hover img{
+    filter: brightness(30%);
+}
+.service .row1 .card:hover .title{
+	height: 100%;
+	padding-top: 1rem;
+	transform: translateY(-.5in) scaleY(1.23, 0);
+	transform: scaleY(2, 0);
+    transition-property: height;
+    transition-duration: 1s;
+}
+.service .row1 .card:hover .title h5{
+	visibility: hidden;
+}
+.service .row1 .card:hover .details{
+    visibility: visible;
+} */
+/* .service .row1 .card:hover{
+    transform: scale(1.1); 
+} */
+/* .card-body{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .card-body .btn{
+    width: 100%;
     color: white;
 }
 .card-body .btn:hover{
-    background-color: #ffbb007a;
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    background-color: #f9c73dc9;
     color: white;
-}
+} */
 /* service end */
 
 /* project starts*/
@@ -131,6 +191,7 @@
 .image{
     display: flex;
     justify-content: center;
+    padding: 0;
     /* background-image: url(); */
     /* background-repeat: no-repeat; */
 }
@@ -249,7 +310,8 @@ background: #ffffff;
     border-radius: 0.5rem; */
 }
 .logo :hover{
-    transform: scale(.8);
+    transform: scale(0.8);
+    transition: all 300ms ease;
 }
 
 /* tech end */
@@ -262,7 +324,9 @@ footer{
 footer svg{
     color: white;
 }
-
+footer a{
+    text-decoration: none;
+}
 .copyright{
     background-color: #29033b;
 }
