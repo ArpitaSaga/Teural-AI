@@ -1,0 +1,76 @@
+/* -----------------Contact us start----------------- */
+:root{
+    --navbar: #1f022cca;
+    --navbar2: #1f022cf7;
+    --header: #1f022c;
+    --yellow: #FFBA00;
+    --white: #fff;
+    --project: #EFEAF5;
+    --sliderCardBoxShadow: #222224d9;
+    --sliderBC1: #e6c045;
+    --sliderBC2: #e4c661;
+    --owlNav: #06060600;
+    --owlDots: #9a9a9a;
+    --copyright: #29033b;
+
+}
+.contact{
+    min-height: 70vh;
+}
+#contact1{
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+
+.contactcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact1 p{
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+}
+#contact_animation{
+    display: flex;
+    justify-content: center;
+}
+.contactanime{
+    width: 400px;
+}
+.form-group label{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.form-group input,.form-group textarea, .form-group input:focus:active, .form-group textarea:focus:active, .form-group input:active, .form-group textarea:active, .form-group input:focus, .form-group textarea:focus {
+    border-color: #540379;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.form-group input:hover,.form-group textarea:hover{
+    box-shadow: inset 0 0 0 0.05rem #540379 !important;
+}
+.contactbtn{
+    justify-content: center;
+}
+.contactbtn button{
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+}
+.contactbtn button:hover{
+    color: var(--white);
+}
+
+@media screen and(max-width: 992px) {
+    .contactanime{
+        width: 300px;
+    }
+}
+
+  
+ 
+
+/* -----------------Contact us end----------------- */

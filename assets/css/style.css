@@ -26,6 +26,7 @@
     position: fixed;
     z-index: 999;
     width: 100vw;
+    top: 0;
 }
 .navs{
     margin-left: auto !important;
@@ -263,9 +264,13 @@ background: var(--white);
 /* tech end */
 
 /* footer */
+.footer{
+    bottom: 0;
+}
 footer{
     background-color: var(--header);
     color: var(--white);
+
 }
 footer svg{
     color: var(--white);
@@ -405,7 +410,6 @@ footer a{
         font-size: 1.5rem;
     }
 }
-
 
 
 
